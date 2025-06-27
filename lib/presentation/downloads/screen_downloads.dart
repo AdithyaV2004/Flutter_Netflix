@@ -8,7 +8,7 @@ class ScreenDownloads extends StatelessWidget {
   final List imageList = [
     "https://media.themoviedb.org/t/p/w440_and_h660_face/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
     "https://media.themoviedb.org/t/p/w440_and_h660_face/7c5VBuCbjZOk7lSfj9sMpmDIaKX.jpg",
-    "https://media.themoviedb.org/t/p/w440_and_h660_face/q5pXRYTycaeW6dEgsCrd4mYPmxM.jpg",
+    "https://media.themoviedb.org/t/p/w440_and_h660_face/vqBmyAj0Xm9LnS1xe1MSlMAJyHq.jpg",
   ];
 
   @override
@@ -39,10 +39,10 @@ class ScreenDownloads extends StatelessWidget {
             child: Stack(
               alignment: Alignment.center,
               children: [
-                // CircleAvatar(
-                //   radius: size.width * 0.4,
-                //   backgroundColor: Colors.blue,
-                // ),
+                CircleAvatar(
+                  radius: size.width * 0.4,
+                  backgroundColor: Colors.blue,
+                ),
                 Container(
                   width: size.width * 0.4,
                   height: size.width * 0.6,
