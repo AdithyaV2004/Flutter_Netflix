@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_netflix/core/colors/colors.dart';
 import 'package:flutter_netflix/presentation/widgets/app_bar_widget.dart';
@@ -43,15 +45,9 @@ class ScreenDownloads extends StatelessWidget {
                   radius: size.width * 0.4,
                   backgroundColor: Colors.blue,
                 ),
-                Container(
-                  width: size.width * 0.4,
-                  height: size.width * 0.6,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage(imageList[0]),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
+                DownloadsImageWidget(
+                  imageList: imageList[0],
+                  margin: EdgeInsets.only(left: 20),
                 ),
               ],
             ),
@@ -81,6 +77,39 @@ class ScreenDownloads extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class DownloadsImageWidget extends StatelessWidget {
+  const DownloadsImageWidget({
+    super.key,
+    required this.imageList,
+    this.angle = 0,
+    required this.margin,
+  });
+
+  final String imageList;
+  final double angle;
+  final EdgeInsets margin;
+
+  @override
+  Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+    return Transform.rotate(
+      angle: angle * pi / 180,
+      child: Container(
+        margin: margin,
+        width: size.width * 0.4,
+        height: size.width * 0.6,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          image: DecorationImage(
+            image: NetworkImage(imageList[0]),
+            fit: BoxFit.cover,
+          ),
+        ),
       ),
     );
   }
