@@ -2,6 +2,8 @@
 
 Clone of netflix.
 
+All dummy data will be filled with APIs
+
 5 navigation screens.
 
 5 individual directories for each screen.
@@ -41,5 +43,13 @@ Navigationbar configuration in bottom_nav.dart
         2.Results-
 
             Gridview with poster images.
+
+--Fast Laugh--
+
+    Pageview with scroll vertical.
+
+    Row with mute button aligned to the end(Cross Axis).
+
+    Column with A circular avatar and 4 icons aligned to the end(main).
 
 
