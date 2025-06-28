@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_netflix/core/colors/colors.dart';
+import 'package:flutter_netflix/core/constants.dart';
 
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({super.key, required this.title});
@@ -12,12 +12,20 @@ class AppBarWidget extends StatelessWidget {
         kWidth,
         Text(
           title,
-          style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
         ),
         Spacer(),
         Icon(Icons.cast, color: Colors.white, size: 30),
         kWidth,
-        Container(width: 30, height: 30, color: Colors.blue),
+        SizedBox(
+          width: 30,
+          height: 30,
+          child: Image(
+            image: NetworkImage(
+              "https://wallpapers.com/images/featured/netflix-profile-pictures-w3lqr61qe57e9yt8.jpg",
+            ),
+          ),
+        ),
         kWidth,
       ],
     );
