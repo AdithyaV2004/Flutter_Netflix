@@ -24,4 +24,22 @@ Navigationbar configuration in bottom_nav.dart
 
         3. two buttons
 
-    Each section is part of a listview.seperated with a sizedbox divider
+    Each section is part of a listview.seperated with a sizedbox divider.
+
+--Search Page--
+
+    Consists of 2 pages
+
+        All icons are CupertinoIcons. Install CupertinoIcons package
+
+        Title at the top is a widget in a seperate file.
+
+        1.idle-
+
+            ListView.seperated with widget for the tile: Poster name and play button.
+
+        2.Results-
+
+            Gridview with poster images.
+
+
