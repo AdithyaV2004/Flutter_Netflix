@@ -5,7 +5,7 @@ import 'package:flutter_netflix/core/constants.dart';
 import 'package:flutter_netflix/presentation/search/widget/title.dart';
 
 const String imageURL =
-    "https://media.themoviedb.org/t/p/w710_and_h400_multi_faces/unthV1mq9llhEinIMPcCUImFodt.jpg";
+    "https://anniehaydesign.weebly.com/uploads/9/5/4/6/95469676/landscape-poster-3_orig.jpg";
 
 class SearchIdleWidget extends StatelessWidget {
   const SearchIdleWidget({super.key});
@@ -51,7 +51,7 @@ class TopSearchItemTile extends StatelessWidget {
         SizedBox(width: 10),
         Expanded(
           child: Text(
-            "Fantastic 4",
+            "Captain America: Civil War",
             style: TextStyle(
               color: kWhiteColor,
               fontWeight: FontWeight.bold,

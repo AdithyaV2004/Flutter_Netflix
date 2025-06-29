@@ -52,4 +52,12 @@ Navigationbar configuration in bottom_nav.dart
 
     Column with A circular avatar and 4 icons aligned to the end(main).
 
+--Home--
+
+    All rows are refactored widgets genereated with Listview.generate.
+
+    Title is seperately refactored.
+
+    Third row is stack.
+
 
