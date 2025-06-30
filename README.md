@@ -54,10 +54,18 @@ Navigationbar configuration in bottom_nav.dart
 
 --Home--
 
+    Topmost card is Seperate widget.
+
+    Its is a containter within a stack with other rows containing icons and buttons.
+
+    Gradient is stacked on top for vignette effect 
+
+    Top bar hides on scrolling down.
+
     All rows are refactored widgets genereated with Listview.generate.
 
     Title is seperately refactored.
 
-    Third row is stack.
+    Third row is row inside a stack with text on top.
 
 

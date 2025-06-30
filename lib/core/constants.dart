@@ -5,4 +5,5 @@ const kHeight = SizedBox(height: 20);
 const kHeight10 = SizedBox(height: 10);
 final BorderRadius kRadius10 = BorderRadius.circular(10);
 const kMainImage =
-    "https://c8.alamy.com/comp/E5MMRH/ra-one-shah-rukh-khan-on-indian-poster-in-english-2011-eros-internationalcourtesy-E5MMRH.jpg";
+    "https://rukminim3.flixcart.com/image/850/1000/l2dmky80/poster/z/r/e/small-poster-ra-one-sl1251-wall-poster-13x19-inches-matte-original-imagdqezfpzvcz75.jpeg?q=90&crop=false";
+TextStyle kHomeTitleText = TextStyle(fontSize: 14, fontWeight: FontWeight.bold);

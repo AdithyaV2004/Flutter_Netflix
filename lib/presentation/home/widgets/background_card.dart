@@ -25,9 +25,13 @@ class BackgroundCard extends StatelessWidget {
           height: 600,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.black, Colors.black54, Colors.black12],
+              colors: [
+                Color.fromARGB(143, 0, 0, 0),
+                Color.fromARGB(17, 0, 0, 0),
+                Color.fromARGB(208, 0, 0, 0),
+              ],
               begin: Alignment.bottomCenter,
-              end: Alignment.center,
+              end: Alignment.topCenter,
             ),
           ),
         ),
