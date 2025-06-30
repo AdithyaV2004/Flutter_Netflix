@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-ValueNotifier<int> indexChangeNotifier = ValueNotifier(0);
+ValueNotifier<int> indexChangeNotifier = ValueNotifier(1);
 
 class BottomNavigationWidget extends StatelessWidget {
   const BottomNavigationWidget({super.key});
