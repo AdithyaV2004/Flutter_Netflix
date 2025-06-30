@@ -39,6 +39,7 @@ class VideoListItem extends StatelessWidget {
                       decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
+                            // ignore: deprecated_member_use
                             color: Colors.black.withOpacity(0.3),
                             blurRadius: 15,
                             offset: Offset(4, 2),
@@ -94,6 +95,7 @@ class VideoActionsWidget extends StatelessWidget {
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
+                  // ignore: deprecated_member_use
                   color: Colors.black.withOpacity(0.3),
                   blurRadius: 15,
                   offset: Offset(4, 2),

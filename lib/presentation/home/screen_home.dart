@@ -54,17 +54,15 @@ class ScreenHome extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                Container(
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(25),
-                                    child: Image(
-                                      image: NetworkImage(
-                                        "https://yt3.googleusercontent.com/CvgBA1ypUZNxOjiCX0l1V2FbAm7oSDPZE4YkMvkpT_4iLXQ3IXWVtBgWnznHxgtcUoj50TXqZA=s900-c-k-c0x00ffffff-no-rj",
-                                      ),
-                                      width: 40,
-                                      height: 50,
-                                      fit: BoxFit.cover,
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(25),
+                                  child: Image(
+                                    image: NetworkImage(
+                                      "https://yt3.googleusercontent.com/CvgBA1ypUZNxOjiCX0l1V2FbAm7oSDPZE4YkMvkpT_4iLXQ3IXWVtBgWnznHxgtcUoj50TXqZA=s900-c-k-c0x00ffffff-no-rj",
                                     ),
+                                    width: 40,
+                                    height: 50,
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
                                 Spacer(),

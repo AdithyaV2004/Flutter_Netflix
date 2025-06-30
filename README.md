@@ -18,54 +18,58 @@ Navigationbar configuration in bottom_nav.dart
 
 --Downloads Page--
 
-    divided the page into 3 sections, each section is a widget. 
+divided the page into 3 sections, each section is a widget. 
 
-        1. One icon and text
+1. One icon and text
 
-        2. Title, subtitle and the movie posters held in a circular avatar which is held in a container(transparent), each poster is a seperate widget.
+2. Title, subtitle and the movie posters held in a circular avatar which is held in a container(transparent), each poster is a seperate widget.
 
-        3. two buttons
+3. two buttons
 
-    Each section is part of a listview.seperated with a sizedbox divider.
+Each section is part of a listview.seperated with a sizedbox divider.
 
 --Search Page--
 
-    Consists of 2 pages
+Consists of 2 pages
 
-        All icons are CupertinoIcons. Install CupertinoIcons package
+All icons are CupertinoIcons. Install CupertinoIcons package
 
-        Title at the top is a widget in a seperate file.
+Title at the top is a widget in a seperate file.
 
-        1.idle-
+1.idle-
 
-            ListView.seperated with widget for the tile: Poster name and play button.
+    ListView.seperated with widget for the tile: Poster name and play button.
 
-        2.Results-
+2.Results-
 
-            Gridview with poster images.
+    Gridview with poster images.
 
 --Fast Laugh--
 
-    Pageview with scroll vertical.
+Pageview with scroll vertical.
 
-    Row with mute button aligned to the end(Cross Axis).
+Row with mute button aligned to the end(Cross Axis).
 
-    Column with A circular avatar and 4 icons aligned to the end(main).
+Column with A circular avatar and 4 icons aligned to the end(main).
 
 --Home--
 
-    Topmost card is Seperate widget.
+Topmost card is Seperate widget.
 
-    Its is a containter within a stack with other rows containing icons and buttons.
+Its is a containter within a stack with other rows containing icons and buttons.
 
-    Gradient is stacked on top for vignette effect 
+Gradient is stacked on top for vignette effect 
 
-    Top bar hides on scrolling down.
+Top bar hides on scrolling down.
 
-    All rows are refactored widgets genereated with Listview.generate.
+All rows are refactored widgets genereated with Listview.generate.
 
-    Title is seperately refactored.
+Title is seperately refactored.
 
-    Third row is row inside a stack with text on top.
+Third row is row inside a stack with text on top.
 
+--New & Hot--
 
+Two tabs- Coming soon, Everyone's Watching using defaulttabcontroller
+
+Inside coming soon, there is listview - row with two columns, second column has more rows and columns.

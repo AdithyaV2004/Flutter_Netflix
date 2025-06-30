@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_netflix/core/colors/colors.dart';
 import 'package:flutter_netflix/core/constants.dart';
+import 'package:flutter_netflix/presentation/new_and_hot/widgets/coming_soon_widget.dart';
 
 class ScreenNewAndHot extends StatelessWidget {
   const ScreenNewAndHot({super.key});
@@ -16,7 +17,7 @@ class ScreenNewAndHot extends StatelessWidget {
             elevation: 0,
             title: const Text(
               "New & Hot",
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
                 fontSize: 25,
                 fontWeight: FontWeight.w900,
@@ -64,16 +65,25 @@ class ScreenNewAndHot extends StatelessWidget {
           ),
         ),
         body: TabBarView(
-          children: [
-            _buildTabBarView("Coming Soon"),
-            _buildTabBarView("Everyone"),
-          ],
+          children: [_buildComingSoon(context), _buildEveryonesWatchin()],
         ),
       ),
     );
   }
 
-  _buildTabBarView(String name) {
-    return Center(child: Text("$name"));
+  Widget _buildComingSoon(BuildContext context) {
+    return ListView.builder(
+      itemCount: 10,
+      itemBuilder: (BuildContext context, index) {
+        return const ComingSoonWidget();
+      },
+    );
+  }
+
+  final String newAndHotTempImage =
+      "https://assets.aboutamazon.com/0b/b3/5062c8934e5e86cea0fd86c3f097/theboys-7wildestmoments-hero-v2.jpg";
+
+  Widget _buildEveryonesWatchin() {
+    return SizedBox();
   }
 }

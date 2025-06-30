@@ -6,15 +6,19 @@ class CustomButtonWidget extends StatelessWidget {
     super.key,
     required this.icon,
     required this.title,
+    this.iconSize = 30,
+    this.textSize = 18,
   });
   final IconData icon;
   final String title;
+  final double iconSize;
+  final double textSize;
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Icon(icon, color: kWhiteColor, size: 30),
-        Text("My List", style: TextStyle(fontSize: 18)),
+        Icon(icon, color: kWhiteColor, size: iconSize),
+        Text(title, style: TextStyle(fontSize: textSize)),
       ],
     );
   }
