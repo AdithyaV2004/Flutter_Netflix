@@ -13,6 +13,8 @@ dependencies:
   google_fonts: ^6.2.1
   video_player: ^2.10.0
   bordered_text: ^2.0.0
+  freezed: ^3.2.0
+  freezed_annotation: ^3.1.0
 
 dev_dependencies:
   flutter_test:
